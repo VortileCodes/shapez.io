@@ -2,7 +2,7 @@
 import { Application } from "../application";
 /* typehints:end */
 
-export const IS_DEBUG =
+export const IS_DEBUG = false;
     G_IS_DEV &&
     typeof window !== "undefined" &&
     window.location.port === "3005" &&
@@ -177,3 +177,4 @@ if (G_IS_DEV && globalConfig.debug.noArtificialDelays) {
     globalConfig.warmupTimeSecondsFast = 0;
     globalConfig.warmupTimeSecondsRegular = 0;
 }
+
